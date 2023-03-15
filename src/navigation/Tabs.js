@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeStack from './stacks/HomeStack';
 import ProfileStack from './stacks/ProfileStack';
-import Search from '../screens/SearchScreen';
+import SearchStack from './stacks/SearchStack';
 import Setting from '../screens/Setting';
 
 const Tabs = () => {
@@ -17,7 +17,7 @@ const Tabs = () => {
             <Tab.Navigator screenOptions={{ headerShown: false }}>
                 <Tab.Screen name="Home" component={HomeStack} />
                 <Tab.Screen name="Profile" component={ProfileStack} />
-                <Tab.Screen name="Search" component={Search} />
+                <Tab.Screen name="Search" component={SearchStack} />
                 <Tab.Screen name="Setting" component={Setting} />
             </Tab.Navigator>
         </NavigationContainer>

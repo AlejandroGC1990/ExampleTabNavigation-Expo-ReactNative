@@ -6,7 +6,7 @@ const ProfileAlbumScreen = ({ navigation }) => {
         <View style={{ flex: 1 }}>
             <Text>Profile Album Screen</Text>
             <TouchableOpacity
-                onPress={() => navigation.navigate("Profile", { cosas: "cosas de AlbumProfile" })}
+                onPress={() => navigation.navigate("Profile", { cosas: "Otras cosas desde AlbumProfile" })}
             >
                 <Text>Navigate to Profile</Text>
             </TouchableOpacity>
